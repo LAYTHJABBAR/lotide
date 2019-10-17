@@ -1,9 +1,7 @@
-function pigLatin(str) {
-  str = str.toLowerCase();
-  const vowels = ["a", "e", "i", "o", "u"];
- 
-console.log(str.split(""))
+function conceptList (numbers){
+let  concepts =(conceptList);
+console.log 
 
-};
 
-console.log(pigLatin("this is all just gibberish"));
+
+conceptList('gits' ,'sdssd' , 'sdsff')

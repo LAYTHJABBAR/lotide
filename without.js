@@ -34,9 +34,3 @@ without(["hello", "world", "lighthouse"], ["lighthouse"]); // no need to capture
 // Make sure the original array was not altered by the without function
 assertArraysEqual(words, ["hello", "world", "lighthouse"]);
 
-
-
-
-
-
-

@@ -20,7 +20,7 @@ const assertEqual = function(actual, expected) {
     console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
   }
   else {
-    console.log(`🛑🛑🛑Asseration Passed: ${actual} !== ${expected}`);
+    console.log(`🛑🛑🛑Asseration Failed: ${actual} !== ${expected}`);
   }
   return actual;
 };

@@ -1,25 +1,25 @@
-const eqArrays = function(a , b ) {
-  if (a.length !== b.length){
-    return false
-  } 
-  else {
-    for (let i = 0; i < a.length; i++) {
-    if (a[i] !== b[i]) {
-      return false;
-  }}
-return true
-}}
-const assertEqual = function(array1, array2) {
-  const match = eqArrays(array1,array2)
-  if ( match) {
-    console.log(`✅✅✅ Assertion Passed: ${array1} === ${array2}`);
+const assertEqual = function(actual, expected) {
+  if (actual === expected) {
+    return console.log(`✅✅✅ Assertion Passed: [${actual}] === [${expected}]`);
+  } else {
+    return console.log(`🛑🛑🛑 Assertion Failed: [${actual}] !== [${expected}]`);
   }
-  else {
-    console.log(`🛑🛑🛑Asseration Passed: ${array1} !== ${array2}`);
-  }
-  return array1;
 };
- 
+
+const eqArrays = function(arrayOne, arrayTwo) {
+  //take array inputs, check for same length
+  if (arrayOne.length === arrayTwo.length) {
+    for (let i = 0; i < arrayOne.length; i++) {
+      if (arrayOne[i] !== arrayTwo[i]) {
+        return false;
+      }
+    }
+    return true;
+  } else {
+    return false
+  }
+};
+
 const eqObjects = function(object1, object2) {
     const key1 = Object.keys(object1);
     const key2 = Object.keys(object2);
@@ -51,10 +51,9 @@ return true
 
 const ab = { a: "1", b: "2" };
 const ba = { b: "2", a: "1" };
-console.log(assertEqual(ab, ba)); // => true
-  
+eqObjects(ab, ba); // => true
 const abc = { a: "1", b: "2", c: "3" };
-console.log(assertEqual(ab, abc)); // => false
-  
-assertEqual(assertEqual(ab, ba), true);
-assertEqual(assertEqual(ab, abc), false);
+eqObjects(ab, abc); // => false
+assertEqual(eqObjects(ab, abc), false);
+assertEqual(eqObjects(ab, ba), true);
+

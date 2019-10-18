@@ -3,7 +3,7 @@ const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
  const takeUntil = function(array, callback) {
  	let result =[];
  	for (let item of array){
- 		if (callback(item)){
+ 		if (!callback(item)==false){
  		  return result
  	} else {
       result.push(item)  

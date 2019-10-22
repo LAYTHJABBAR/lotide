@@ -1,8 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@laythjabbar/lotide",
   "version": "1.0.0",
-  "description": "",
-  "main": "assertArraysEqual.js",
+  "description":"those functions programed by laythjabbar ",
   "directories": {
     "test": "test"
   },
@@ -13,7 +12,8 @@
     "type": "git",
     "url": "git+https://github.com/LAYTHJABBAR/lotide.git"
   },
-  "author": "",
+  "author": { "name": "laythjabbar",
+    "Email": "layth.jabbar@yahoo.com"},
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/LAYTHJABBAR/lotide/issues"

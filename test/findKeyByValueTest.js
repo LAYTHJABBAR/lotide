@@ -8,7 +8,7 @@ describe('findKeyByValue(object, value)', () => {
       comedy: "Brooklyn Nine-Nine",
       drama:  "The Wire"} , "The Wire"), "drama");
   });
-    it('should return dsxi-fi when the value is "The Expanse" , sci_fi', () => {
+    it('should return sci-fi when the value is "The Expanse" , sci_fi', () => {
       assert.deepEqual(findKeyByValue({ 
         sci_fi: "The Expanse",
         comedy: "Brooklyn Nine-Nine",
